@@ -1,4 +1,4 @@
-# 🔥 Fire & Smoke Detection System &🌦️ Weather Monitoring System
+# 🔥 Fire & Smoke Detection System and 🌦️ Weather Monitoring System
 
 This repository contains **two IoT/Embedded Systems projects** built using Arduino and ESP32:
 
