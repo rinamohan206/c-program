@@ -1,139 +1,141 @@
-Fire and Smoke Detection System using Arduino
+# 🔥 Fire & Smoke Detection System &🌦️ Weather Monitoring System
 
-Project Overview
+This repository contains **two IoT/Embedded Systems projects** built using Arduino and ESP32:
 
-This project is an Arduino-based Fire and Smoke Detection System that detects the presence of fire and smoke using sensors. The system displays the smoke level on a 16×2 I2C LCD and activates a buzzer when fire or high smoke is detected.
+1. Fire and Smoke Detection System (Arduino Uno)
+2. Weather Monitoring System (ESP32 + Blynk IoT)
 
-Features
+---
 
-- Detects fire using a flame sensor.
-- Detects smoke using a smoke sensor.
-- Displays smoke level on a 16×2 I2C LCD.
-- Activates a buzzer as an alarm.
-- Indicates Low, Medium, and High smoke levels.
-- Displays fire detection status on the LCD.
+# 🔥 1. Fire and Smoke Detection System (Arduino)
 
-Components Used
+## 📌 Project Overview
+This project is an Arduino-based safety system that detects fire and smoke using sensors. It displays real-time smoke levels on a 16×2 I2C LCD and triggers a buzzer alarm when fire or high smoke levels are detected.
 
-- Arduino Uno
-- MQ Smoke Sensor
-- Flame Sensor
-- 16×2 I2C LCD Display
-- Buzzer
-- Breadboard
-- Jumper Wires
+---
 
-Pin Connections
+## ✨ Features
+- Fire detection using Flame Sensor  
+- Smoke detection using MQ Smoke Sensor  
+- Real-time smoke level display (LOW / MEDIUM / HIGH)  
+- 16×2 I2C LCD display  
+- Buzzer alarm system  
+- Serial Monitor output  
 
-Component| Arduino Pin
-Smoke Sensor| A0
-Flame Sensor| D8
-Buzzer| D9
-I2C LCD| SDA, SCL
+---
 
-Working
+## 🧰 Components Used
+- Arduino Uno  
+- MQ Smoke Sensor  
+- Flame Sensor  
+- 16×2 I2C LCD Display  
+- Buzzer  
+- Breadboard & Jumper Wires  
 
-1. The smoke sensor continuously monitors the smoke level.
-2. The flame sensor detects the presence of fire.
-3. The LCD displays the smoke level as LOW, MEDIUM, or HIGH.
-4. If fire is detected, the LCD displays "FIRE DETECTED" and the buzzer turns ON.
-5. If no fire is detected, the LCD displays "NO FIRE DETECTED".
-6. The smoke level is also displayed in the Serial Monitor.
+---
 
-Software Used
+## 🔌 Pin Connections
 
-- Arduino IDE
-- Arduino C/C++
+| Component       | Arduino Pin |
+|----------------|-------------|
+| Smoke Sensor   | A0          |
+| Flame Sensor   | D8          |
+| Buzzer         | D9          |
+| I2C LCD        | SDA, SCL    |
 
-Applications
+---
 
-- Home Fire Safety
-- Industrial Safety
-- Laboratories
-- Offices
-- Warehouses
+## ⚙️ Working
+- Smoke sensor continuously reads air quality levels  
+- Flame sensor detects fire presence  
+- LCD shows smoke level and fire status  
+- Buzzer activates when fire or high smoke is detected  
+- Serial Monitor displays sensor values  
 
-Output
+---
 
-- Displays LOW, MEDIUM, or HIGH smoke level on the LCD.
-- Shows "NO FIRE DETECTED" when no fire is present.
-- Shows "FIRE DETECTED" when a flame is detected.
-- Activates the buzzer for fire detection and high smoke levels.
-- Prints the smoke sensor value in the Arduino Serial Monitor.
+## 🎯 Applications
+- Home Safety Systems  
+- Industrial Safety  
+- Laboratories  
+- Offices & Warehouses  
 
-Author
-Rinamohan
-<br>
+---
 
-Weather Monitoring System using ESP32
+## 📤 Output
+- LOW / MEDIUM / HIGH smoke levels on LCD  
+- “FIRE DETECTED” alert message  
+- Buzzer alarm activation  
+- Serial monitor data logging  
 
-Project Overview
+---
 
-This project is an IoT-based Weather Monitoring System developed using ESP32, Blynk, and multiple environmental sensors. It monitors temperature, humidity, rainfall, atmospheric pressure, and air quality in real time. The sensor readings are displayed on a 16×2 I2C LCD and transmitted to the Blynk mobile application for remote monitoring.
+# 🌦️ 2. Weather Monitoring System (ESP32 + Blynk IoT)
 
-Features
+## 📌 Project Overview
+This IoT-based system uses ESP32 and multiple sensors to monitor environmental conditions like temperature, humidity, rainfall, pressure, and air quality in real time. Data is displayed on LCD and sent to the Blynk mobile app.
 
-- Real-time Temperature Monitoring
-- Humidity Measurement
-- Rain Detection
-- Atmospheric Pressure Monitoring
-- Air Quality Monitoring
-- LCD Display for Live Sensor Data
-- Remote Monitoring using the Blynk App
+---
 
-Components Used
+## ✨ Features
+- Real-time Temperature & Humidity monitoring  
+- Rain detection system  
+- Atmospheric pressure monitoring  
+- Air quality monitoring  
+- LCD live data display  
+- Remote monitoring using Blynk IoT app  
 
-- ESP32 Development Board
-- DHT11 Temperature and Humidity Sensor
-- BMP180 Pressure Sensor
-- MQ135 Air Quality Sensor
-- Rain Sensor Module
-- 16×2 I2C LCD Display
-- Jumper Wires
-- Breadboard
+---
 
-Software Used
+## 🧰 Components Used
+- ESP32 Development Board  
+- DHT11 Sensor  
+- BMP180 Pressure Sensor  
+- MQ135 Air Quality Sensor  
+- Rain Sensor Module  
+- 16×2 I2C LCD Display  
+- Jumper Wires & Breadboard  
 
-- Arduino IDE
-- ESP32 Board Package
-- Blynk IoT Platform
-- Arduino C/C++
+---
 
-Working
+## ☁️ Blynk Virtual Pins
 
-1. The DHT11 sensor measures temperature and humidity.
-2. The BMP180 sensor measures atmospheric pressure.
-3. The rain sensor detects rainfall intensity.
-4. The MQ135 sensor monitors air quality.
-5. All sensor values are displayed on the 16×2 LCD.
-6. The readings are sent to the Blynk mobile application through Wi-Fi.
-7. The Blynk LED indicator turns ON when poor air quality is detected.
+| Sensor        | Virtual Pin |
+|--------------|-------------|
+| Temperature  | V0          |
+| Humidity     | V1          |
+| Rain Sensor  | V2          |
+| Pressure     | V3          |
+| Air Quality  | V4          |
 
-Blynk Virtual Pins
+---
 
-Sensor| Virtual Pin
-Temperature| V0
-Humidity| V1
-Rain Sensor| V2
-Pressure| V3
-Air Quality LED| V4
+## ⚙️ Working
+- Sensors collect environmental data  
+- ESP32 processes and sends data via Wi-Fi  
+- LCD displays live readings  
+- Blynk app shows remote sensor values  
+- Air quality alert activates LED indicator  
 
-Applications
+---
 
-- Smart Weather Monitoring
-- Environmental Monitoring
-- Smart Agriculture
-- Greenhouse Monitoring
-- Air Pollution Monitoring
+## 🎯 Applications
+- Smart Weather Stations  
+- Smart Agriculture  
+- Greenhouse Monitoring  
+- Pollution Monitoring Systems  
 
-Output
+---
 
-- Displays Temperature and Humidity on the LCD.
-- Displays Rainfall Level and Atmospheric Pressure on the LCD.
-- Sends real-time sensor data to the Blynk mobile application.
-- Turns ON the Blynk LED when poor air quality is detected.
-- Displays all sensor readings in the Arduino Serial Monitor for monitoring.
+## 📤 Output
+- Live environmental data on LCD  
+- Remote monitoring via Blynk app  
+- Serial monitor logging  
+- Air quality alert system  
 
-Author
+---
 
-Rinamohan
+# 👨‍💻 Author
+**Rinamohan**
+
+---
